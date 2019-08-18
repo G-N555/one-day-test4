@@ -3,7 +3,7 @@ const db = require("./knex");
 
 const PORT = process.env.PORT || 7000;
 
-async () => {
+(async () => {
   try {
     //drop table if existing
     console.log("drop table");
@@ -25,4 +25,4 @@ async () => {
     console.log("something wrong...", err);
     process.exit(-1);
   }
-};
+})();
